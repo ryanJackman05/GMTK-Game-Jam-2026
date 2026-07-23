@@ -21,6 +21,7 @@ public class NPCDialogue : MonoBehaviour
     // Called by player to initiate or continue conversation
     public void Talk()
     {
+        Debug.Log("Talked to " + name);
         if(lines == null) return;
         
         if (!inDialogue){
