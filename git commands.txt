@@ -1,0 +1,9 @@
+git checkout -b <branchName>
+git add -A
+git commit -m "message"
+git push origin HEAD
+	HEAD = pushes updates for branch that git is currently looking at
+	main = the main branch. Pushes any updates for main, to main.
+
+PULL REQUESTS
+request to merge one branch into another for the main repo
