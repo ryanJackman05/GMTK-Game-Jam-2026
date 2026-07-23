@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = (moveVector * speed);
         if (moveVector.magnitude > 0){
+            if (moveVector.x != 0){
+                int direction = (moveVector.x > 0) ? 1 : -1;
+                transform.localScale = new Vector3(direction, 1, 1);
+            }
             // TODO animator.SetBool("walking", true);
         }
         
