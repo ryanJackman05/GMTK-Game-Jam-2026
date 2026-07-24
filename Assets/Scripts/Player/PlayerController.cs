@@ -38,4 +38,11 @@ public class PlayerController : MonoBehaviour
             item.gameObject.SetActive(false);
         }
     }
+
+    void OnInventory(InputValue value)
+    {
+        if (value.isPressed){
+            
+        }
+    }
 }
