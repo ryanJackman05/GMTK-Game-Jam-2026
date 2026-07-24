@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     public List<ItemInfo> items = new List<ItemInfo>();
     [SerializeField] BoxCollider2D interactionBox;
+    
+    [SerializeField] GameObject inventoryScreen;
+    [SerializeField] GameObject itemPanelPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +44,7 @@ public class PlayerController : MonoBehaviour
 
     void OnInventory(InputValue value)
     {
-        if (value.isPressed){
-            
-        }
+        Debug.Log(value.isPressed);
+        inventoryScreen.SetActive(value.isPressed);
     }
 }

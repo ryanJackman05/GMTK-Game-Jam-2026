@@ -34,12 +34,12 @@
                 },
                 {
                     "name": "Inventory",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "b8e9d828-ee8c-4e3b-a0b6-5c9454954b15",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
