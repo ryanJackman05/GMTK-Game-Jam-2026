@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public List<ItemInfo> items = new List<ItemInfo>();
     [SerializeField] BoxCollider2D interactionBox;
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,12 @@ public class PlayerController : MonoBehaviour
         if (interaction.GetComponent<NPCDialogue>() != null){
             interaction.GetComponent<NPCDialogue>().Talk();
         }
-        else if(true){
-            // TODO item
+        else if (interaction.GetComponent<Item>() != null){
+            Item item = interaction.GetComponent<Item>();
+            if (item.itemInfo != null){
+                items.Add(item.itemInfo);
+            }
+            item.gameObject.SetActive(false);
         }
     }
 }
