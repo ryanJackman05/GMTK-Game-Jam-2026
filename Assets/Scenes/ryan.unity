@@ -1140,6 +1140,7 @@ GameObject:
   - component: {fileID: 390398610}
   - component: {fileID: 390398609}
   - component: {fileID: 390398612}
+  - component: {fileID: 390398613}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -1222,7 +1223,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2054907661, guid: 1ed670b42ebc8f842aa8ecdbb68d6aa9, type: 3}
+  m_Sprite: {fileID: 2054907661, guid: b780b886ece76df43b7691beff8f79b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1293,6 +1294,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &390398613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390398608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41464ca7403d70345a307b983245f3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor1: {r: 0.8851015, g: 0.8851015, b: 0.9622642, a: 1}
+  customColor2: {r: 0.4433962, g: 0.41889825, b: 0.13594696, a: 1}
+  customColor3: {r: 0.5754717, g: 0.4261748, b: 0.5754717, a: 1}
+  customColor4: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &510710646
 GameObject:
   m_ObjectHideFlags: 0
