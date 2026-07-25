@@ -32,8 +32,12 @@ public class NPCDialogue : MonoBehaviour
         }
         else{
             string nextLine = GetNextLine();
-            if (nextLine == "EOL") return;
-            // gm.setDialogue(GetNextLine())
+            if (nextLine == "EOL"){
+                GameManager.gm.closeDialogue();
+                inDialogue = false;
+                return;
+            }
+            GameManager.gm.dialogue(nextLine);
         }
     }
     public bool StartDialogue()
@@ -42,7 +46,8 @@ public class NPCDialogue : MonoBehaviour
         if (lines[currentLine] == null || lines.Length < 1) return false;
         
         // line found, start communication with GameManager for dialogue box management
-        // gm.setline(lines[0])
+        GameManager.gm.dialogue(lines[0]);
+        inDialogue = true;
         return true;
     }
     public string GetNextLine() // returns the next dialogue line, without incrementing values
