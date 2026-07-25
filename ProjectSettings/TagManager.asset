@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: OOB
+    uniqueID: 3498372821
+    locked: 0
+  - name: Ground
+    uniqueID: 3885222565
+    locked: 0
+  - name: Collision
+    uniqueID: 3852115971
+    locked: 0
+  - name: Doors
+    uniqueID: 792797193
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
