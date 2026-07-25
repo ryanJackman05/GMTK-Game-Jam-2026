@@ -8,7 +8,7 @@ public class NPCDialogue : MonoBehaviour
 
     Collider2D trigger;
     public ContactFilter2D filter = new ContactFilter2D();
-    public int recieveItem, wrongItem; // indexes for each unique chain of request-related dialogue lines. wrongItem must be the final chain out of all of lines[]
+    
     int currentLine; // current line of dialogue being displayed
 
     [SerializeField] bool inDialogue;
