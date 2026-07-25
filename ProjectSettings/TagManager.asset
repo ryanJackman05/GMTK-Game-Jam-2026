@@ -38,8 +38,8 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: OOB
+    uniqueID: 3498372821
     locked: 0
   - name: Ground
     uniqueID: 3885222565
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Doors
     uniqueID: 792797193
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
