@@ -12,8 +12,18 @@ Shader "Custom/SpritePaletteSwap"
 
     SubShader
     {
-        Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "PreviewType"="Plane" "CanUseSpriteAtlas"="True" }
-        Cull Off Lighting Off ZWrite Off Blend One OneMinusSrcAlpha
+        Tags { 
+            "Queue"="Transparent" 
+            "IgnoreProjector"="True" 
+            "RenderType"="Transparent" 
+            "PreviewType"="Plane" 
+            "CanUseSpriteAtlas"="True" 
+        }
+        
+        Cull Off 
+        Lighting Off 
+        ZWrite Off 
+        Blend One OneMinusSrcAlpha // Standard Sprite Alpha Blending
 
         Pass
         {
@@ -50,13 +60,17 @@ Shader "Custom/SpritePaletteSwap"
             fixed4 frag(v2f IN) : SV_Target {
                 fixed4 texColor = tex2D(_MainTex, IN.texcoord);
                 
-                // Check if the pixel matches our Key Color (ignoring alpha for the check)
-                if (distance(texColor.rgb, _KeyColor.rgb) < 0.01) {
+                // 1. Perform the color swap logic only on pixels that have visibility
+                if (texColor.a > 0.0 && distance(texColor.rgb, _KeyColor.rgb) < 0.01) {
                     texColor.rgb = _TargetColor.rgb;
                 }
 
-                // Multiply by sprite renderer tint/alpha
+                // 2. Combine with the vertex/tint color
                 texColor *= IN.color;
+
+                // 3. CRITICAL FOR SPRITES: Premultiply alpha to fix the white transparent artifact
+                texColor.rgb *= texColor.a;
+
                 return texColor;
             }
         ENDCG
