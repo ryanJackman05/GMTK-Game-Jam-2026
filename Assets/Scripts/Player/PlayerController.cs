@@ -28,9 +28,12 @@ public class PlayerController : MonoBehaviour
     {
         List<Collider2D> hits = new List<Collider2D>();
         interactionBox.GetContacts(hits);
-        
+        Collider2D interaction;
         // just grab first in list
-        Collider2D interaction = hits[0];
+        if (hits.Count > 0)
+             interaction = hits[0];
+        else
+            return;
 
         if (interaction.GetComponent<NPCDialogue>() != null){
             interaction.GetComponent<NPCDialogue>().Talk();
@@ -48,8 +51,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
             for (int i = 0; i < 8; i++){
-                if(items[i] == null) inventorySprites[i].sprite = null;
-                inventorySprites[i].sprite = items[i].itemIcon;
+                if(!items[i] || !items[i].itemIcon) 
+                    inventorySprites[i].sprite = null;
+                else
+                    inventorySprites[i].sprite = items[i].itemIcon;
             }
         }
     }
@@ -58,5 +63,33 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(value.isPressed);
         inventoryScreen.SetActive(value.isPressed);
+    }
+
+    public void UseItem(ItemInfo itemInfo)
+    {
+        if (itemInfo == null) return;
+        
+        List<Collider2D> hits = new List<Collider2D>();
+        interactionBox.GetContacts(hits);
+        // just grab first in list
+        Collider2D interaction = hits[0];
+        
+        if (interaction == null){}
+        switch (itemInfo.name){
+            case "Stake" :
+                if (interaction.GetComponent<NPCDialogue>() != null){
+                    bool wasVampire = interaction.GetComponent<NPCDialogue>().Kill();
+                    if (wasVampire){
+                        //GameManager.WinScreen();
+                    }
+                    else{
+                        // GameManager.LoseScreen();
+                    }
+                }
+                break;
+            case "Master Bedroom Key":
+                // TODO unlock logic
+                break;
+        }
     }
 }

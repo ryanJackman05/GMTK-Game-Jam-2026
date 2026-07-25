@@ -1159,6 +1159,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcdc65c9f886d804f8b602e0ff2513d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: 
+  clothingColour1: 
+  clothingColour2: 
+  stain: 0
+  isVampire: 0
   lines:
   - Hello!
   - I am NPC
@@ -4591,6 +4596,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 864395257}
+  - {fileID: 1460931774}
   - {fileID: 4940837998480052388}
   - {fileID: 5413869861603027985}
   - {fileID: 8515360524509100804}
@@ -4962,6 +4968,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453339589}
   m_CullTransparentMesh: 1
+--- !u!1 &1460931773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460931774}
+  m_Layer: 5
+  m_Name: Game Over
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1460931774
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460931773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1361610556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.1, y: 0.5}
+  m_AnchorMax: {x: 0.9, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1771407450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5625,6 +5666,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 7772892965834501791}
+    - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1460931773}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: inventoryScreen
       value: 

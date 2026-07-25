@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
 {
+    public string name, clothingColour1, clothingColour2;
+    public bool stain;
+    
+    public bool isVampire;
+    
     public string[] lines;
 
     Collider2D trigger;
@@ -16,6 +21,15 @@ public class NPCDialogue : MonoBehaviour
     {
         trigger = GetComponent<Collider2D>();
         filter.SetLayerMask(LayerMask.GetMask("Interactable"));
+    }
+
+    void Update()
+    {
+        if (inDialogue){
+            if ((GameManager.player.transform.position - transform.position).magnitude > 2){
+                EndDialogue();
+            }
+        }
     }
 
     // Called by player to initiate or continue conversation
@@ -33,8 +47,7 @@ public class NPCDialogue : MonoBehaviour
         else{
             string nextLine = GetNextLine();
             if (nextLine == "EOL"){
-                GameManager.gm.closeDialogue();
-                inDialogue = false;
+                EndDialogue();
                 return;
             }
             GameManager.gm.dialogue(nextLine);
@@ -50,6 +63,12 @@ public class NPCDialogue : MonoBehaviour
         inDialogue = true;
         return true;
     }
+
+    public void EndDialogue()
+    {
+        GameManager.gm.closeDialogue();
+        inDialogue = false;
+    }
     public string GetNextLine() // returns the next dialogue line, without incrementing values
     {
         // if end of lines, end conversation
@@ -64,5 +83,10 @@ public class NPCDialogue : MonoBehaviour
     string DialogueStatus()
     {
         return "Current Line: "+currentLine;
+    }
+
+    public bool Kill()
+    {
+        return isVampire;
     }
 }

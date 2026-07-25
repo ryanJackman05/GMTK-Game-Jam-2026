@@ -51,5 +51,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
     }
-
+    
+    public void WinScreen()
+    {
+        Time.timeScale = 0;
+        gameOverMenu.SetActive(true);
+    }
+    
+    public void LoadScreen()
+    {
+        Time.timeScale = 0;
+        gameOverMenu.SetActive(true);
+    }
 }
