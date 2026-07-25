@@ -445,6 +445,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: base_tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 50
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0dcdcabdadc684e9286deb0b5986fd
+      internalID: 2052890541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: base_tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 50
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2e5941dcabb8a4f9bc0e571aef8adb
+      internalID: 1278953747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -464,6 +506,8 @@ TextureImporter:
       base_tilemap_13: -1432040227
       base_tilemap_14: -1404798796
       base_tilemap_15: -1993801907
+      base_tilemap_16: 2052890541
+      base_tilemap_17: 1278953747
       base_tilemap_2: 1074750888
       base_tilemap_3: -1869338165
       base_tilemap_4: 1236473772
