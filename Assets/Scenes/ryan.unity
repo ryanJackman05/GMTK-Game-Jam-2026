@@ -5617,6 +5617,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 5293095317903737972}
+    - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 7772892965834501791}
+    - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+      propertyPath: inventoryScreen
+      value: 
+      objectReference: {fileID: 864395256}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5786,7 +5798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5413869861603027985
 RectTransform:
   m_ObjectHideFlags: 0

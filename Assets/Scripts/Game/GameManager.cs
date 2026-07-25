@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gm;
+    
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject gameOverMenu;
     [SerializeField] GameObject inventoryScreen;
@@ -17,13 +19,24 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (gm == null) gm = this;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void dialogue(string text)
+    {
+        dialogueBox.SetActive(true);
+        dialogueText.text = text;
+    }
+
+    public void closeDialogue()
+    {
+        dialogueBox.SetActive(false);
     }
 
     public void Pause()
