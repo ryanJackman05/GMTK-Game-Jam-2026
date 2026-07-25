@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,11 +10,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] BoxCollider2D interactionBox;
     
     [SerializeField] GameObject inventoryScreen;
+    [SerializeField] Image[] inventorySprites = new Image[8];
     [SerializeField] GameObject itemPanelPrefab;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.player = this;
     }
 
     // Update is called once per frame
@@ -35,10 +37,15 @@ public class PlayerController : MonoBehaviour
         }
         else if (interaction.GetComponent<Item>() != null){
             Item item = interaction.GetComponent<Item>();
+            item.gameObject.SetActive(false);
+            
             if (item.itemInfo != null){
                 items.Add(item.itemInfo);
+                for (int i = 0; i < inventorySprites.Length; i++){
+                    if(items[i].itemIcon == null) return;
+                    inventorySprites[i].sprite = items[i].itemIcon;
+                }
             }
-            item.gameObject.SetActive(false);
         }
     }
 
