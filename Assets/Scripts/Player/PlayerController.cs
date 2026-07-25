@@ -12,6 +12,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject inventoryScreen;
     [SerializeField] Image[] inventorySprites = new Image[8];
     [SerializeField] GameObject itemPanelPrefab;
+
+    public bool HasItem(ItemInfo item)
+    {
+        foreach (ItemInfo inventoryItem in items)
+        {
+            if (inventoryItem == item)
+                return true;
+        }
+
+        return false;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +62,10 @@ public class PlayerController : MonoBehaviour
                 if(items[i] == null) inventorySprites[i].sprite = null;
                 inventorySprites[i].sprite = items[i].itemIcon;
             }
+        }
+        else if (interaction.GetComponent<Door>() != null)
+        {
+            interaction.GetComponent<Door>().OpenDoor();
         }
     }
 
