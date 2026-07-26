@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     // // // Guessing Vars
     [SerializeField] Camera guessCam;
     [SerializeField] GameObject guessMenu;
+    public AudioSource MusicSource;
     
     
     public static PlayerController player; // set by Player on spawn
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
         }
         else if (inGame){
             inGame = false;
+            MusicSource.Stop();
             GuessScene();
         }
     }
@@ -119,6 +121,8 @@ public class GameManager : MonoBehaviour
         }
         else{
             SceneManager.LoadScene("lose");
+            SoundManager.sm.PlayClip("snd_woman_laugh");
+            SoundManager.sm.PlayClip("snd_basic_sting");
         }
     }
 }

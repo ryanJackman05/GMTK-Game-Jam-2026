@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager sm;
     public AudioClip[] clips;
-    private List<AudioSource> sources;
+    private List<AudioSource> sources =  new List<AudioSource>();
     // Start is called before the first frame update
 
     private void Start()
