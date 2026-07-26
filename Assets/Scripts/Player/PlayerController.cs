@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
         foreach (Collider2D interaction in hits){
             if (interaction.GetComponent<NPCDialogue>() != null){
                 interaction.GetComponent<NPCDialogue>().Talk();
+                return;
             }
             else if (interaction.GetComponent<Item>() != null){
                 Item item = interaction.GetComponent<Item>();
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
                     else inventorySprites[i].sprite = items[i].itemIcon;
                 }
                 GameManager.gm.setInfoText("Got "+item.itemInfo.name);
+                return;
             }
             else if (interaction.GetComponent<Door>() != null)
             {

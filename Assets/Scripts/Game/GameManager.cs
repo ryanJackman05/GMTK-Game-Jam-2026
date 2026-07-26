@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
+    public float timeRemaining = 120;
     
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject gameOverMenu;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI descText;
     
     [SerializeField] TextMeshProUGUI infoText;
+    [SerializeField] TextMeshProUGUI timerText;
     //[SerializeField] TextMeshProUGUI characterName;
     
     public static PlayerController player; // set by Player on spawn
@@ -30,7 +32,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(timeRemaining > 0){
+            timeRemaining -= Time.deltaTime;
+            timerText.text = ((int)timeRemaining).ToString();
+        }
+        else{
+            // TODO switch to select screen
+        }
     }
 
     public void dialogue(string text)
