@@ -12,7 +12,7 @@ public class NPCDialogue : MonoBehaviour
     
     int currentLine; // current line of dialogue being displayed
 
-    [SerializeField] bool inDialogue;
+    public bool inDialogue;
     void Start()
     {
         if (string.IsNullOrEmpty(charName)){

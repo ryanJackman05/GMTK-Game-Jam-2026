@@ -9,10 +9,15 @@ public class NPCMovement : MonoBehaviour
     public float waypointDistance = 0.1f;
 
     private int currentWaypoint = 0;
+    
+    [SerializeField] NPCDialogue npcDialogue;
 
     void Update()
     {
         if (waypoints.Length == 0)
+            return;
+        
+        if (npcDialogue.inDialogue)
             return;
 
         Transform target = waypoints[currentWaypoint];
