@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdf5cfd16e5a12d448b779be113cea55, type: 3}
-  m_Name: Master Bedroom Key
+  m_Name: lipstick
   m_EditorClassIdentifier: 
-  itemName: Master Bedroom Key
-  itemDescription: An ornate key leading to the master bedroom
-  itemIcon: {fileID: 1007114544, guid: 73b0f6c7513230149b605f15f788dbe7, type: 3}
+  itemName: Lipstick
+  itemDescription: An inconspicuous tube of velvet lipstick
+  itemIcon: {fileID: 0}

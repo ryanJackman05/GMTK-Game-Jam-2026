@@ -16,7 +16,7 @@ public class Door : MonoBehaviour
         }
         else
         {
-            Debug.Log("You need a key.");
+            GameManager.gm.setInfoText("You need a key.");
         }
     }
 }

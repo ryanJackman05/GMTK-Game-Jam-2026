@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
 {
+    public string charName;
     public string[] lines;
 
     Collider2D trigger;
@@ -14,6 +15,9 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField] bool inDialogue;
     void Start()
     {
+        if (string.IsNullOrEmpty(charName)){
+            charName = gameObject.name;
+        }
         trigger = GetComponent<Collider2D>();
         filter.SetLayerMask(LayerMask.GetMask("Interactable"));
     }
@@ -21,7 +25,7 @@ public class NPCDialogue : MonoBehaviour
     // Called by player to initiate or continue conversation
     public void Talk()
     {
-        Debug.Log("Talked to " + name);
+        Debug.Log("Talked to " + charName);
         if(lines == null) return;
         
         if (!inDialogue){
@@ -37,7 +41,7 @@ public class NPCDialogue : MonoBehaviour
                 inDialogue = false;
                 return;
             }
-            GameManager.gm.dialogue(nextLine);
+            GameManager.gm.dialogue(nextLine, charName);
         }
     }
     public bool StartDialogue()
@@ -46,7 +50,7 @@ public class NPCDialogue : MonoBehaviour
         if (lines[currentLine] == null || lines.Length < 1) return false;
         
         // line found, start communication with GameManager for dialogue box management
-        GameManager.gm.dialogue(lines[0]);
+        GameManager.gm.dialogue(lines[0], charName);
         inDialogue = true;
         return true;
     }
