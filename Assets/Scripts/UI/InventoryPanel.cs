@@ -10,11 +10,11 @@ public class UIElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public void OnPointerEnter(PointerEventData eventData)
     {
         if(GameManager.player.items[inventoryIndex])
-            GameManager.gm.setInfoText(GameManager.player.items[inventoryIndex].itemDescription);
+            GameManager.gm.setDescText(GameManager.player.items[inventoryIndex].itemDescription);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        GameManager.gm.closeInfoText();
+        GameManager.gm.closeDescText();
     }
 }

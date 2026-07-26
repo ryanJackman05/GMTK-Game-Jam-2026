@@ -43,32 +43,34 @@ public class PlayerController : MonoBehaviour
         int num = interactionBox.GetContacts(hits);
         
         // just grab first in list
-        if (num == 0) return;
-        Collider2D interaction = hits[0];
-
-        if (interaction.GetComponent<NPCDialogue>() != null){
-            interaction.GetComponent<NPCDialogue>().Talk();
-        }
-        else if (interaction.GetComponent<Item>() != null){
-            Item item = interaction.GetComponent<Item>();
-            item.gameObject.SetActive(false);
+        foreach (Collider2D interaction in hits){
+            if (interaction.GetComponent<NPCDialogue>() != null){
+                interaction.GetComponent<NPCDialogue>().Talk();
+            }
+            else if (interaction.GetComponent<Item>() != null){
+                Item item = interaction.GetComponent<Item>();
+                item.gameObject.SetActive(false);
             
-            if (item.itemInfo != null){
-                for (int i = 0; i < 8; i++){
-                    if (items[i] == null){
-                        items[i] = item.itemInfo;
-                        break;
+                if (item.itemInfo != null){
+                    for (int i = 0; i < 8; i++){
+                        if (items[i] == null){
+                            items[i] = item.itemInfo;
+                            break;
+                        }
                     }
                 }
+                else return;
+            
+                for (int i = 0; i < 8; i++){
+                    if(items[i] == null) inventorySprites[i].sprite = defaultSprite;
+                    else inventorySprites[i].sprite = items[i].itemIcon;
+                }
+                GameManager.gm.setInfoText("Got "+item.itemInfo.name);
             }
-            for (int i = 0; i < 8; i++){
-                if(items[i] == null) inventorySprites[i].sprite = defaultSprite;
-                else inventorySprites[i].sprite = items[i].itemIcon;
+            else if (interaction.GetComponent<Door>() != null)
+            {
+                interaction.GetComponent<Door>().OpenDoor();
             }
-        }
-        else if (interaction.GetComponent<Door>() != null)
-        {
-            interaction.GetComponent<Door>().OpenDoor();
         }
     }
 

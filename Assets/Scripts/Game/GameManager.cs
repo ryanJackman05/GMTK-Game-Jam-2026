@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] GameObject descBox;
     [SerializeField] TextMeshProUGUI descText;
+    
+    [SerializeField] TextMeshProUGUI infoText;
     //[SerializeField] TextMeshProUGUI characterName;
     
     public static PlayerController player; // set by Player on spawn
@@ -42,15 +44,29 @@ public class GameManager : MonoBehaviour
         dialogueBox.SetActive(false);
     }
 
-    public void setInfoText(string text)
+    public void setDescText(string text)
     {
         descBox.SetActive(true);
         descText.text = text;
     }
 
-    public void closeInfoText()
+    public void closeDescText()
     {
         descBox.SetActive(false);
+    }
+
+    public void setInfoText(string text)
+    {
+        StopAllCoroutines();
+        StartCoroutine(setTopText(text));
+    }
+
+    IEnumerator setTopText(string text)
+    {
+        infoText.gameObject.SetActive(true);
+        infoText.text = text;
+        yield return new WaitForSeconds(2f);
+        infoText.gameObject.SetActive(false);
     }
 
     public void Pause()
