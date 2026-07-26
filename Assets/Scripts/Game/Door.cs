@@ -13,6 +13,7 @@ public class Door : MonoBehaviour
         if (GameManager.player.HasItem(requiredKey))
         {
             doorTilemap.ClearAllTiles();
+            SoundManager.sm.PlayClip("snd_door_unlock");
         }
         else
         {
