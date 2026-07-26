@@ -10617,6 +10617,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 769816344}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+      propertyPath: characterName
+      value: 
+      objectReference: {fileID: 1142754896}
+    - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: timeRemaining
       value: 10
       objectReference: {fileID: 0}

@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     void GuessScene()
     {
         FindObjectOfType<CamFollow>().active = false;
-        player.enabled = false; // disable player actions behind the scene
+        player.gameObject.SetActive(false); // disable player actions behind the scene
         Camera.main.gameObject.SetActive(false);
         guessCam.gameObject.SetActive(true);
             
