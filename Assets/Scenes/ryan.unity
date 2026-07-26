@@ -5779,6 +5779,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3708352473319484663, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: defaultSprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 3708352473319484663, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: inventoryScreen
       value: 
       objectReference: {fileID: 864395256}

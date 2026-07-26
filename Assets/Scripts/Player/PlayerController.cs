@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject inventoryScreen;
     [SerializeField] Image[] inventorySprites = new Image[8];
     [SerializeField] GameObject itemPanelPrefab;
+    
+    [SerializeField] Sprite defaultSprite;
 
     public bool HasItem(ItemInfo item)
     {
@@ -59,8 +61,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
             for (int i = 0; i < 8; i++){
-                if(items[i] == null) inventorySprites[i].sprite = null;
-                inventorySprites[i].sprite = items[i].itemIcon;
+                if(items[i] == null) inventorySprites[i].sprite = defaultSprite;
+                else inventorySprites[i].sprite = items[i].itemIcon;
             }
         }
         else if (interaction.GetComponent<Door>() != null)
