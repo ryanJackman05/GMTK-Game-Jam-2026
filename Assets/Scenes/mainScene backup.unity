@@ -1535,10 +1535,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2544389786308311793, guid: d945b7845df36334f845f553bb453c5c, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1339607068}
     - target: {fileID: 3708352473319484663, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: inventoryScreen
       value: 
@@ -1608,10 +1604,6 @@ PrefabInstance:
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.875
       objectReference: {fileID: 0}
@@ -1658,9 +1650,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5971221878264851892, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1339607067}
-    - targetCorrespondingSourceObject: {fileID: 5971221878264851892, guid: d945b7845df36334f845f553bb453c5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1339607068}
   m_SourcePrefab: {fileID: 100100000, guid: d945b7845df36334f845f553bb453c5c, type: 3}
 --- !u!1 &577695665
 GameObject:
@@ -10776,27 +10765,6 @@ MonoBehaviour:
   customColor4: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
   customColor5: {r: 0.2264151, g: 0.1816765, b: 0.14845142, a: 1}
   customColor6: {r: 0.122641504, g: 0.100406446, b: 0.07578319, a: 1}
---- !u!95 &1339607068
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339607060}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 84fd1feae6175ea458eba92676d3bd0e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1372544009
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,9 +31,19 @@ public class PlayerMovement : MonoBehaviour
         if (moveVector.magnitude > 0){
             if (moveVector.x != 0){
                 int direction = (moveVector.x > 0) ? 1 : -1;
-                transform.localScale = new Vector3(direction, 1, 1);
+                transform.localScale = new Vector3(-direction, 1, 1);
             }
-            // TODO animator.SetBool("walking", true);
+            if (moveVector.y != 0){
+                int direction = (moveVector.y > 0) ? 1 : -1;
+                animator.SetInteger("y", direction);
+            }
+            else{
+                animator.SetInteger("y", 0);
+            }
+            animator.SetBool("walking", true);
+        }
+        else{
+            animator.SetBool("walking", false);
         }
         
     }
