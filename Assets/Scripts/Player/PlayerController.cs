@@ -40,9 +40,10 @@ public class PlayerController : MonoBehaviour
     void OnInteract(InputValue value)
     {
         List<Collider2D> hits = new List<Collider2D>();
-        interactionBox.GetContacts(hits);
+        int num = interactionBox.GetContacts(hits);
         
         // just grab first in list
+        if (num == 0) return;
         Collider2D interaction = hits[0];
 
         if (interaction.GetComponent<NPCDialogue>() != null){
