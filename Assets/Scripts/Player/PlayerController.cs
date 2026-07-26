@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
                     else inventorySprites[i].sprite = items[i].itemIcon;
                 }
                 GameManager.gm.setInfoText("Got "+item.itemInfo.name);
+                SoundManager.sm.PlayClip("snd_key_pickup");
                 return;
             }
             else if (interaction.GetComponent<Door>() != null)
