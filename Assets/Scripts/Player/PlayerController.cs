@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject inventoryScreen;
     [SerializeField] Image[] inventorySprites = new Image[8];
     [SerializeField] GameObject itemPanelPrefab;
+    
+    [SerializeField] Sprite defaultSprite;
 
     public bool HasItem(ItemInfo item)
     {
@@ -38,9 +40,10 @@ public class PlayerController : MonoBehaviour
     void OnInteract(InputValue value)
     {
         List<Collider2D> hits = new List<Collider2D>();
-        interactionBox.GetContacts(hits);
+        int num = interactionBox.GetContacts(hits);
         
         // just grab first in list
+        if (num == 0) return;
         Collider2D interaction = hits[0];
 
         if (interaction.GetComponent<NPCDialogue>() != null){
@@ -59,8 +62,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
             for (int i = 0; i < 8; i++){
-                if(items[i] == null) inventorySprites[i].sprite = null;
-                inventorySprites[i].sprite = items[i].itemIcon;
+                if(items[i] == null) inventorySprites[i].sprite = defaultSprite;
+                else inventorySprites[i].sprite = items[i].itemIcon;
             }
         }
         else if (interaction.GetComponent<Door>() != null)
