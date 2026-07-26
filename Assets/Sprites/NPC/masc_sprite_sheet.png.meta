@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1ed670b42ebc8f842aa8ecdbb68d6aa9
+guid: ede0e9eeea2d6444c90072de6ee4f2ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_0
+      name: masc_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 191
-        width: 30
-        height: 64
+        x: 2
+        y: 189
+        width: 26
+        height: 65
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7bce79e58e9b5d4c9f78f68d8127222
-      internalID: 205100663
+      spriteID: acac38e7e05258244b5c0239436b7532
+      internalID: 881799548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_1
+      name: masc_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 191
-        width: 30
-        height: 64
+        x: 30
+        y: 189
+        width: 26
+        height: 65
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3aa2a7ab7166584ca9d88b55b6f58ee
-      internalID: 1446360368
+      spriteID: 63dd6c46b51d68a428ba670a882c0dbb
+      internalID: 1684079951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_2
+      name: masc_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 65
-        y: 191
-        width: 30
-        height: 64
+        x: 58
+        y: 189
+        width: 26
+        height: 65
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7a977b19e675254d918d789f68274f9
-      internalID: 240392873
+      spriteID: 74a0290b7b8309f48998afca4742cb62
+      internalID: 496767648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_3
+      name: masc_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 97
-        y: 191
-        width: 30
-        height: 64
+        x: 86
+        y: 189
+        width: 26
+        height: 65
       alignment: 3
       pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,19 +187,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ed10fc3c7b05d64487c25fbda9c4cfa
-      internalID: 804375279
+      spriteID: 6b8618837edcc3e4a8234b1226da16cd
+      internalID: -197228255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_4
+      name: masc_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 125
-        width: 30
+        x: 2
+        y: 123
+        width: 26
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -208,19 +208,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7734ef635db2d4e8d3fda0ccb085b7
-      internalID: 511757479
+      spriteID: b73ce51e1d90cfc4b99f2a39f27a7670
+      internalID: 703102982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_5
+      name: masc_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 125
-        width: 30
+        x: 30
+        y: 123
+        width: 26
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -229,19 +229,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f072809505c39504b89bfb8d2025510e
-      internalID: -689169714
+      spriteID: d9a808887a53038479c16891a5a0bc64
+      internalID: -2045676985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_6
+      name: masc_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 65
-        y: 125
-        width: 30
+        x: 58
+        y: 123
+        width: 26
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -250,19 +250,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7acd9923458c9c24081efc220a85655d
-      internalID: -1501145945
+      spriteID: 7b3a29c977620104580f6ccd5f2f6a2e
+      internalID: 1010743808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_7
+      name: masc_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 3
-        y: 59
-        width: 28
+        x: 2
+        y: 57
+        width: 24
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -271,19 +271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d85fd95a516f9dd4dba89e01851bcca2
-      internalID: -2016233307
+      spriteID: 2f70c70bb1e691a4c9e20d5b3adf0d86
+      internalID: -698089170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_8
+      name: masc_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 33
-        y: 59
-        width: 28
+        x: 28
+        y: 57
+        width: 24
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -292,19 +292,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579805ad94bc4e7419e7154b180645d6
-      internalID: -1542821196
+      spriteID: 382ff45cfb62bb4468eff16130a37701
+      internalID: 943527461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sample_npc_sprite_sheet_9
+      name: masc_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 63
-        y: 59
-        width: 28
+        x: 54
+        y: 57
+        width: 24
         height: 64
       alignment: 3
       pivot: {x: 1, y: 1}
@@ -313,29 +313,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b497b476804895842aca6fa09dbf92ea
-      internalID: 2026739260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sample_npc_sprite_sheet_10
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 59
-        width: 28
-        height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b7eefea6fe632e4697b3400878238e5
-      internalID: -1733090444
+      spriteID: 736a1730968cba247943f2ff21f09334
+      internalID: 752410587
       vertices: []
       indices: 
       edges: []
@@ -351,17 +330,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sample_npc_sprite_sheet_0: 205100663
-      sample_npc_sprite_sheet_1: 1446360368
-      sample_npc_sprite_sheet_10: -1733090444
-      sample_npc_sprite_sheet_2: 240392873
-      sample_npc_sprite_sheet_3: 804375279
-      sample_npc_sprite_sheet_4: 511757479
-      sample_npc_sprite_sheet_5: -689169714
-      sample_npc_sprite_sheet_6: -1501145945
-      sample_npc_sprite_sheet_7: -2016233307
-      sample_npc_sprite_sheet_8: -1542821196
-      sample_npc_sprite_sheet_9: 2026739260
+      masc_sprite_sheet_0: 881799548
+      masc_sprite_sheet_1: 1684079951
+      masc_sprite_sheet_2: 496767648
+      masc_sprite_sheet_3: -197228255
+      masc_sprite_sheet_4: 703102982
+      masc_sprite_sheet_5: -2045676985
+      masc_sprite_sheet_6: 1010743808
+      masc_sprite_sheet_7: -698089170
+      masc_sprite_sheet_8: 943527461
+      masc_sprite_sheet_9: 752410587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
