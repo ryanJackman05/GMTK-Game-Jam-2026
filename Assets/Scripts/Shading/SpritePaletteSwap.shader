@@ -1,4 +1,4 @@
-Shader "Custom/SpriteFourPaletteSwap"
+Shader "Custom/SpriteSixPaletteSwap"
 {
     Properties
     {
@@ -18,8 +18,16 @@ Shader "Custom/SpriteFourPaletteSwap"
         _TargetColor3 ("Target Color 3", Color) = (0,0,1,1) 
 
         [Header(Color Slot 4)]
-        _KeyColor4 ("Key Color 4", Color) = (1,1,0,1)    // Pure Yellow (R:1, G:1, B:0)
+        _KeyColor4 ("Key Color 4", Color) = (1,1,0,1)    // Pure Yellow
         _TargetColor4 ("Target Color 4", Color) = (1,1,0,1) 
+
+        [Header(Color Slot 5)]
+        _KeyColor5 ("Key Color 5", Color) = (1,0,1,1)    // Pure Magenta (R:1, G:0, B:1)
+        _TargetColor5 ("Target Color 5", Color) = (1,0,1,1) 
+
+        [Header(Color Slot 6)]
+        _KeyColor6 ("Key Color 6", Color) = (0,1,1,1)    // Pure Cyan (R:0, G:1, B:1)
+        _TargetColor6 ("Target Color 6", Color) = (0,1,1,1) 
     }
 
     SubShader
@@ -59,14 +67,12 @@ Shader "Custom/SpriteFourPaletteSwap"
             sampler2D _MainTex;
             fixed4 _Color;
             
-            fixed4 _KeyColor1;
-            fixed4 _TargetColor1;
-            fixed4 _KeyColor2;
-            fixed4 _TargetColor2;
-            fixed4 _KeyColor3;
-            fixed4 _TargetColor3;
-            fixed4 _KeyColor4;
-            fixed4 _TargetColor4;
+            fixed4 _KeyColor1; fixed4 _TargetColor1;
+            fixed4 _KeyColor2; fixed4 _TargetColor2;
+            fixed4 _KeyColor3; fixed4 _TargetColor3;
+            fixed4 _KeyColor4; fixed4 _TargetColor4;
+            fixed4 _KeyColor5; fixed4 _TargetColor5;
+            fixed4 _KeyColor6; fixed4 _TargetColor6;
 
             v2f vert(appdata_t IN) {
                 v2f OUT;
@@ -96,6 +102,14 @@ Shader "Custom/SpriteFourPaletteSwap"
                     // Check Slot 4 (Yellow)
                     else if (distance(texColor.rgb, _KeyColor4.rgb) < 0.01) {
                         texColor.rgb = _TargetColor4.rgb;
+                    }
+                    // Check Slot 5 (Magenta)
+                    else if (distance(texColor.rgb, _KeyColor5.rgb) < 0.01) {
+                        texColor.rgb = _TargetColor5.rgb;
+                    }
+                    // Check Slot 6 (Cyan)
+                    else if (distance(texColor.rgb, _KeyColor6.rgb) < 0.01) {
+                        texColor.rgb = _TargetColor6.rgb;
                     }
                 }
 
