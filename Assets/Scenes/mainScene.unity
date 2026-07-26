@@ -10688,7 +10688,7 @@ PrefabInstance:
       objectReference: {fileID: 1142754896}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: timeRemaining
-      value: 2
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: inventoryScreen
@@ -46258,7 +46258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 4764e474a79261749a91c299f6370a17, type: 3}
 --- !u!4 &1679932936
 Transform:
   m_ObjectHideFlags: 0
