@@ -8,6 +8,7 @@ public class CamFollow : MonoBehaviour
 
     public Vector2 softLimit, hardLimit;
     public float speed;
+    public bool active;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class CamFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!active) return;
         // apply hard limit
         Vector3 pos = Vector3.forward*-10;
         

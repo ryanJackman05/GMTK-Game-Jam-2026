@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Master Bedroom Key
   m_EditorClassIdentifier: 
   itemName: Master Bedroom Key
-  itemDescription: An ornate key leading to one of the house's bedrooms
-  itemIcon: {fileID: -568307484, guid: 73b0f6c7513230149b605f15f788dbe7, type: 3}
+  itemDescription: An ornate key leading to the master bedroom
+  itemIcon: {fileID: 1007114544, guid: 73b0f6c7513230149b605f15f788dbe7, type: 3}

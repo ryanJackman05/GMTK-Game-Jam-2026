@@ -15,8 +15,9 @@ public class SoundManager : MonoBehaviour
         sm = this;
         foreach (AudioClip clip in clips){
             AudioSource source = gameObject.AddComponent<AudioSource>();
+            source.playOnAwake = false;
             source.clip = clip;
-            sm.sources.Add(source);
+            sources.Add(source);
         }
     }
     
