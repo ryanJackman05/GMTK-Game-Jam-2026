@@ -2,25 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
     public float timeRemaining = 120;
+    bool inGame = true;
     
-    [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject gameOverMenu;
     [SerializeField] GameObject inventoryScreen;
     
     [SerializeField] GameObject dialogueBox;
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] TextMeshProUGUI characterName;
     
     [SerializeField] GameObject descBox;
     [SerializeField] TextMeshProUGUI descText;
     
     [SerializeField] TextMeshProUGUI infoText;
     [SerializeField] TextMeshProUGUI timerText;
-    //[SerializeField] TextMeshProUGUI characterName;
+    
+    // // // Guessing Vars
+    [SerializeField] Camera guessCam;
+    [SerializeField] GameObject guessMenu;
+    
     
     public static PlayerController player; // set by Player on spawn
     // Start is called before the first frame update
@@ -36,15 +42,17 @@ public class GameManager : MonoBehaviour
             timeRemaining -= Time.deltaTime;
             timerText.text = ((int)timeRemaining).ToString();
         }
-        else{
-            // TODO switch to select screen
+        else if (inGame){
+            inGame = false;
+            GuessScene();
         }
     }
 
-    public void dialogue(string text)
+    public void dialogue(string text, string name)
     {
         dialogueBox.SetActive(true);
         dialogueText.text = text;
+        characterName.text = name;
     }
 
     public void closeDialogue()
@@ -77,17 +85,39 @@ public class GameManager : MonoBehaviour
         infoText.gameObject.SetActive(false);
     }
 
-    public void Pause()
+    void GuessScene()
     {
-        Time.timeScale = 0;
-        pauseMenu.SetActive(true);
-        gameOverMenu.SetActive(false);
+        FindObjectOfType<CamFollow>().active = false;
+        player.enabled = false; // disable player actions behind the scene
+        Camera.main.gameObject.SetActive(false);
+        guessCam.gameObject.SetActive(true);
+            
+        GameObject[] NPCs = GameObject.FindGameObjectsWithTag("NPC");
+        GameObject[] anchors = GameObject.FindGameObjectsWithTag("Anchor");
+
+        for (int i = 0; i < NPCs.Length; i++){
+            GameObject NPC = NPCs[i];
+            foreach (GameObject anchor_ in anchors){
+
+                if (anchor_.name.Contains(i.ToString())){
+                    NPC.transform.position = anchor_.transform.position;
+                }
+            }
+        }
+        
+        inventoryScreen.SetActive(false);
+        timerText.gameObject.SetActive(false);
+        infoText.gameObject.SetActive(false);
+        guessMenu.SetActive(true);
     }
 
-    public void Resume()
+    public void WinOrLose(bool win)
     {
-        Time.timeScale = 1;
-        pauseMenu.SetActive(false);
+        if (win){
+            SceneManager.LoadScene("win");
+        }
+        else{
+            SceneManager.LoadScene("lose");
+        }
     }
-
 }

@@ -41,7 +41,7 @@ public class NPCDialogue : MonoBehaviour
                 inDialogue = false;
                 return;
             }
-            GameManager.gm.dialogue(nextLine);
+            GameManager.gm.dialogue(nextLine, charName);
         }
     }
     public bool StartDialogue()
@@ -50,7 +50,7 @@ public class NPCDialogue : MonoBehaviour
         if (lines[currentLine] == null || lines.Length < 1) return false;
         
         // line found, start communication with GameManager for dialogue box management
-        GameManager.gm.dialogue(lines[0]);
+        GameManager.gm.dialogue(lines[0], charName);
         inDialogue = true;
         return true;
     }
