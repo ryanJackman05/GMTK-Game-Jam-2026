@@ -1575,6 +1575,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: interaction collider
       objectReference: {fileID: 0}
+    - target: {fileID: 4856397845441202185, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1736846896, guid: d01e7c898fac7364e99e3d95631d9e4c, type: 3}
+    - target: {fileID: 4856397845441202185, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856397845441202185, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856397845441202185, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856397845441202185, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 544289977d06a434cb0837bd40651c5c, type: 2}
     - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: m_Size.x
       value: 0.8
@@ -1582,6 +1602,18 @@ PrefabInstance:
     - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: m_Size.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774296130528791867, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898078527437698338, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5971221878264851892, guid: d945b7845df36334f845f553bb453c5c, type: 3}
       propertyPath: m_Name
@@ -1614,7 +1646,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5971221878264851892, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1339607067}
   m_SourcePrefab: {fileID: 100100000, guid: d945b7845df36334f845f553bb453c5c, type: 3}
 --- !u!1 &577695665
 GameObject:
@@ -10707,6 +10742,29 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
+--- !u!1 &1339607060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5971221878264851892, guid: d945b7845df36334f845f553bb453c5c, type: 3}
+  m_PrefabInstance: {fileID: 523465940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1339607067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339607060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41464ca7403d70345a307b983245f3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor1: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
+  customColor2: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  customColor3: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
+  customColor4: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  customColor5: {r: 0.2264151, g: 0.1816765, b: 0.14845142, a: 1}
+  customColor6: {r: 0.122641504, g: 0.100406446, b: 0.07578319, a: 1}
 --- !u!1 &1372544009
 GameObject:
   m_ObjectHideFlags: 0
