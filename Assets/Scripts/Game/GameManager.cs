@@ -97,9 +97,10 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < NPCs.Length; i++){
             GameObject NPC = NPCs[i];
+            string index = NPC.name.Substring(4);
             foreach (GameObject anchor_ in anchors){
 
-                if (anchor_.name.Contains(i.ToString())){
+                if (anchor_.name.Contains(index)){
                     NPC.transform.position = anchor_.transform.position;
                 }
             }

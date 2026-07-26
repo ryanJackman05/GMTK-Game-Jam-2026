@@ -472,7 +472,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -858,6 +858,143 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &261872409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2739832371169214247, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_Name
+      value: NPC 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739832371169214247, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor1.b
+      value: 0.43164828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor1.g
+      value: 0.6022309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor1.r
+      value: 0.9433962
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor2.b
+      value: 0.27305093
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor2.g
+      value: 0.5385814
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor2.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor3.b
+      value: 0.06132078
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor3.g
+      value: 0.3898584
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor3.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor4.b
+      value: 0.23113209
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor4.g
+      value: 0.50023586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4879374222229380930, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: customColor4.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131369092993070199, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: charName
+      value: Lucy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Good evening.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: ... what did you say?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: There's a vampire here at this party?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: And they've killed someone?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: My word. No, I haven't seen anything
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
 --- !u!1 &293790746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,7 +1150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1922,7 +2059,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3576,7 +3713,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3969,7 +4106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4053,7 +4190,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10443,7 +10580,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10622,7 +10759,7 @@ PrefabInstance:
       objectReference: {fileID: 1142754896}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: timeRemaining
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3137634347682395223, guid: 9ec84bba6d274684a858a4d48b338b97, type: 3}
       propertyPath: inventoryScreen
@@ -46084,7 +46221,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2739832371169214247, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: NPC 1
       objectReference: {fileID: 0}
     - target: {fileID: 2739832371169214247, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
       propertyPath: m_TagString
@@ -46130,11 +46267,85 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: charName
+      value: Lucy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Good evening.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: ... what did you say?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: There's a vampire here at this party?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: And they've killed someone?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154122646303650358, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: My word. No, I haven't seen anything
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd78a7c2ae3481e42a9b8658852bcf08, type: 3}
+--- !u!1 &1679932934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679932936}
+  - component: {fileID: 1679932935}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1679932935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679932934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926a4f08f269e3245ab190c6395caa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 0}
+--- !u!4 &1679932936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679932934}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688208903
 GameObject:
   m_ObjectHideFlags: 0
@@ -50999,7 +51210,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -51193,7 +51404,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -51500,4 +51711,6 @@ SceneRoots:
   - {fileID: 768155373}
   - {fileID: 187177918}
   - {fileID: 1672342657}
+  - {fileID: 261872409}
   - {fileID: 1339082021}
+  - {fileID: 1679932936}
